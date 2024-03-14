@@ -1,0 +1,326 @@
+/*RESET CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*FIN RESET CSS*/
+
+body {
+	font-family: "Jua", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #e84142;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 94vh;
+}
+
+header h1 {
+	font-size: 64px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+header p {
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+header span {
+	background: #D9D9D939;
+	color: #fff;
+	font-size: 24px;
+	padding-block: 10px;
+	padding-inline: 20px;
+	display: flex;
+	justify-content: center;
+	width: 659px;
+	border-radius: 12px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1600px;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+	margin-inline: 50px;
+}
+
+.links {
+	display: flex;
+}
+
+#top-info {
+    display: flex;
+    max-width: 900px;
+    margin-top: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.text {
+	max-width: 700px;
+}
+
+#table {
+	margin-top: 25px;
+	position: relative; 
+	left: 500px;
+}
+
+.img {
+	margin-right: 80px;
+	margin-bottom: 50px;
+}
+
+
+#main-section {
+    display: flex;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#main-section p {
+font-size: 24px;
+margin-top: 20px;
+}
+
+#text-coq {
+	max-width: 800px;
+}
+
+#coq-coke {
+ margin-right: 60px;
+}
+
+
+footer {
+    background: #e84142;
+    font-size: 24px;
+    color: #fff;
+    padding-block: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cta {
+	width: 174px;
+	transition: 0.5s;
+}
+
+.cta:hover {
+	transform: scale(0.9);
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+body {
+	background: #e84142;
+}
+
+footer {
+	display: none;
+}
+
+.img {
+    margin: 0;
+}
+
+.ca {
+	display: none;
+    }
+
+#top-info {
+    display: flex;
+    max-width: 900px;
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1600px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+	margin-block: 5px;
+}
+
+#zuck {
+	max-width: 350px;
+}
+
+.text {
+	max-width: 300px;
+}
+
+#main-section {
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+#coq-coke {
+ margin: 0px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip.clicked .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+button {
+	font-size: 20px;
+	background: white;
+	padding-block: 15px;
+	padding-inline: 30px;
+	font-weight: 700;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+	width: 200px;
+	margin-bottom: 30px;
+	font-family: "Jua", sans-serif;
+}
+
+button:hover {
+background: #grey;
+}
+
+
+
+
+header h1 {
+	font-size: 45px;
+}
+
+#table {
+	display: none;
+}
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+	.bouton{
+		display: none;
+	}
+
+
+}
+
